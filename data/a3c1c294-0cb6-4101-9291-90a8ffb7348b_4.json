@@ -1,0 +1,186 @@
+{
+  "type": "bundle",
+  "id": "bundle--a3c1c294-0cb6-4101-9291-90a8ffb7348b",
+  "objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--26848aa3-cbd4-45f6-a830-db8b21dbebfb",
+      "created": "2020-06-07 10:30:25+02:00",
+      "modified": "2020-07-13 07:29:52-05:00",
+      "name": "Malicious site hosting downloader",
+      "description": "This organized threat actor group operates to create profit from all types of crime.",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://bybyx6tp00xs.mp4/']",
+      "pattern_type": "stix",
+      "valid_from": "2014-06-29T13:49:37.079Z"
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--e2f3f287-9260-4e9b-9701-6fc1cd70331e",
+      "created": "2020-06-07 10:30:25+02:00",
+      "modified": "2020-07-13 07:29:52-05:00",
+      "name": "bybyx6tp00xs backdoor",
+      "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+      "malware_types": [
+        "backdoor",
+        "remote-access-trojan"
+      ],
+      "is_family": false,
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mandiant-attack-lifecycle-model",
+          "phase_name": "establish-foothold"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d7747e6d-7d85-43ff-9631-3c3d30d395c6",
+      "created": "2020-06-07 10:30:25+02:00",
+      "modified": "2020-07-13 07:29:52-05:00",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--26848aa3-cbd4-45f6-a830-db8b21dbebfb",
+      "target_ref": "malware--e2f3f287-9260-4e9b-9701-6fc1cd70331e"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e84c4fa4-c2e2-4c9e-af88-211aecf5d20e",
+      "created": "2020-06-27 09:22:06-04:00",
+      "modified": "2020-07-02 15:44:12+02:00",
+      "name": "Malicious site hosting downloader",
+      "description": "This organized threat actor group operates to create profit from all types of crime.",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://016mrkb6zm9y.flac/']",
+      "pattern_type": "stix",
+      "valid_from": "2014-06-29T13:49:37.079Z"
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--080219e4-30ce-4c7d-9a81-d6b09bdce4b7",
+      "created": "2020-06-27 09:22:06-04:00",
+      "modified": "2020-07-02 15:44:12+02:00",
+      "name": "016mrkb6zm9y backdoor",
+      "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+      "malware_types": [
+        "backdoor",
+        "remote-access-trojan"
+      ],
+      "is_family": false,
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mandiant-attack-lifecycle-model",
+          "phase_name": "establish-foothold"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--422af75a-83cf-4ec7-af48-0f0cceb2b6a9",
+      "created": "2020-06-27 09:22:06-04:00",
+      "modified": "2020-07-02 15:44:12+02:00",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--e84c4fa4-c2e2-4c9e-af88-211aecf5d20e",
+      "target_ref": "malware--080219e4-30ce-4c7d-9a81-d6b09bdce4b7"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c130de26-429f-4920-8aa1-d6cb5ecb8b84",
+      "created": "2020-05-04 18:59:17+02:00",
+      "modified": "2020-05-22 10:51:59+03:00",
+      "name": "Malicious site hosting downloader",
+      "description": "This organized threat actor group operates to create profit from all types of crime.",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://30omqbk0zz66.webm/']",
+      "pattern_type": "stix",
+      "valid_from": "2014-06-29T13:49:37.079Z"
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--6c2a088b-cbc2-4284-ba94-54cb177355c2",
+      "created": "2020-05-04 18:59:17+02:00",
+      "modified": "2020-05-22 10:51:59+03:00",
+      "name": "30omqbk0zz66 backdoor",
+      "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+      "malware_types": [
+        "backdoor",
+        "remote-access-trojan"
+      ],
+      "is_family": false,
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mandiant-attack-lifecycle-model",
+          "phase_name": "establish-foothold"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a1ba0093-f869-4a1b-a19d-5902d4820df9",
+      "created": "2020-05-04 18:59:17+02:00",
+      "modified": "2020-05-22 10:51:59+03:00",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c130de26-429f-4920-8aa1-d6cb5ecb8b84",
+      "target_ref": "malware--6c2a088b-cbc2-4284-ba94-54cb177355c2"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0545e6ab-e53f-4bb6-a70f-201c6910126c",
+      "created": "2020-06-08 11:40:22+00:00",
+      "modified": "2020-07-15 20:09:02+04:00",
+      "name": "Malicious site hosting downloader",
+      "description": "This organized threat actor group operates to create profit from all types of crime.",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://izr0cqf6x14u.avi/']",
+      "pattern_type": "stix",
+      "valid_from": "2014-06-29T13:49:37.079Z"
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--fedb8d05-de16-4006-bd44-031f9b6a624c",
+      "created": "2020-06-08 11:40:22+00:00",
+      "modified": "2020-07-15 20:09:02+04:00",
+      "name": "izr0cqf6x14u backdoor",
+      "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+      "malware_types": [
+        "backdoor",
+        "remote-access-trojan"
+      ],
+      "is_family": false,
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "mandiant-attack-lifecycle-model",
+          "phase_name": "establish-foothold"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--54048b83-bf62-4ddc-9161-953b4c262c48",
+      "created": "2020-06-08 11:40:22+00:00",
+      "modified": "2020-07-15 20:09:02+04:00",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--0545e6ab-e53f-4bb6-a70f-201c6910126c",
+      "target_ref": "malware--fedb8d05-de16-4006-bd44-031f9b6a624c"
+    }
+  ]
+}
